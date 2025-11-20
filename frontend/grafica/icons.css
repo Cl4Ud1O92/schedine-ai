@@ -1,1 +1,29 @@
-1
+/* Esempio di icone custom, puoi espandere con classi e SVG */
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+/* Esempio di sport: */
+.icon-calcio::before {
+  content: "⚽";
+}
+
+.icon-basket::before {
+  content: "🏀";
+}
+
+.icon-tennis::before {
+  content: "🎾";
+}
+
+.icon-futbol::before {
+  content: "🏈";
+}
+
+.icon-baseball::before {
+  content: "⚾";
+}
