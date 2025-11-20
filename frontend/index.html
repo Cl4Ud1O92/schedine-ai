@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Schedine AI Webapp</title>
+</head>
+<body>
+  <h1>Schedine AI Webapp</h1>
+  <button id="testBtn">Test Server Backend</button>
+  <div id="response"></div>
+  <script>
+    document.getElementById('testBtn').onclick = () => {
+      fetch('https://TUO_BACKEND_URL.onrender.com/test')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('response').textContent = JSON.stringify(data);
+        })
+        .catch(err => {
+          document.getElementById('response').textContent = 'Errore: ' + err.message;
+        });
+    };
+  </script>
+</body>
+</html>
