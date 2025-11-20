@@ -10,7 +10,7 @@
   <div id="response"></div>
   <script>
     document.getElementById('testBtn').onclick = () => {
-      fetch('https://TUO_BACKEND_URL.onrender.com/test')
+      fetch('https://schedine-ai.onrender.com/test')
         .then(res => res.json())
         .then(data => {
           document.getElementById('response').textContent = JSON.stringify(data);
